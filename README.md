@@ -162,4 +162,4 @@ Nyaya can be configured to provide general information on:
 
 ---
 
-**Made with ❤️ for accessible legal information in India**
+
