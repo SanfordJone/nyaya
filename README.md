@@ -1,13 +1,13 @@
-# Nyaya: AI Legal Assistant
+# Nyaya: The Voice of Justice
 
-Nyaya is an AI-powered Indian legal assistant that integrates Twilio and Deepgram via websockets for real-time audio streaming and transcription. Nyaya delivers clear, accurate, and compassionate legal information, specializing in Indian law and common legal issues.
+Nyaya is an AI-powered Indian legal voice assistant that integrates Twilio and Deepgram via websockets for real-time audio streaming and transcription. Nyaya delivers clear, accurate, and compassionate legal information through voice interactions, specializing in Indian law and common legal issues.
 
 ---
 
 ## Features
 
 - **Real-time audio streaming:** Streams audio from Twilio, buffers, and forwards it to Deepgram for live transcription.
-- **User interaction:** Handles user barge-in and media streaming events.
+- **Voice-based user interaction:** Handles user barge-in and media streaming events, enabling natural voice conversations.
 - **Customizable prompts:** Sends configuration and a legal assistant prompt to Deepgram on connection.
 - **Response processing:** Processes Deepgram responses and relays them to Twilio.
 - **Accessible explanations:** Explains legal rights, procedures, document requirements, and processes in simple, accessible language.
@@ -68,4 +68,3 @@ The server listens on `localhost:5000` for incoming Twilio websocket connections
 ## Disclaimer
 
 Nyaya provides information based on the knowledge of its underlying language model and should not be considered a substitute for professional legal advice. Its responses may not always be fully accurate or up-to-date. You can customize and extend this voice agent to better suit your specific requirements.
-```
