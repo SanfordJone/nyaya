@@ -1,37 +1,45 @@
-```markdown
 # Nyaya: AI Legal Assistant
 
 Nyaya is an AI-powered Indian legal assistant that integrates Twilio and Deepgram via websockets for real-time audio streaming and transcription. Nyaya delivers clear, accurate, and compassionate legal information, specializing in Indian law and common legal issues.
 
+---
+
 ## Features
 
-- Streams audio from Twilio, buffers, and forwards it to Deepgram for live transcription.
-- Handles user barge-in and media streaming events.
-- Sends configuration and a legal assistant prompt to Deepgram on connection.
-- Processes Deepgram responses and relays them to Twilio.
-- Explains legal rights, procedures, document requirements, and processes in simple, accessible language.
+- **Real-time audio streaming:** Streams audio from Twilio, buffers, and forwards it to Deepgram for live transcription.
+- **User interaction:** Handles user barge-in and media streaming events.
+- **Customizable prompts:** Sends configuration and a legal assistant prompt to Deepgram on connection.
+- **Response processing:** Processes Deepgram responses and relays them to Twilio.
+- **Accessible explanations:** Explains legal rights, procedures, document requirements, and processes in simple, accessible language.
+
+---
 
 ## Requirements
 
 - Python 3.7+
-- `websockets` library
-- `python-dotenv` for environment variable management
+- [`websockets`](https://pypi.org/project/websockets/) library
+- [`python-dotenv`](https://pypi.org/project/python-dotenv/) for environment variable management
+
+---
 
 ## Setup
 
-1. Install dependencies:
+1. **Install dependencies:**
 
     ```bash
     pip install websockets python-dotenv
     ```
 
-2. Set your Deepgram API key in a `.env` file:
+2. **Set your Deepgram API key in a `.env` file:**
 
     ```env
     DEEPGRAM_API_KEY=your_deepgram_api_key_here
     ```
 
-3. Create a `config.json` file with your Deepgram agent configuration. Include a prompt that describes Nyaya's expertise, communication style, and the types of legal issues it can assist with.
+3. **Create a `config.json` file** with your Deepgram agent configuration.  
+   Include a prompt that describes Nyaya's expertise, communication style, and the types of legal issues it can assist with.
+
+---
 
 ## Usage
 
